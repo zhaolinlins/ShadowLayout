@@ -138,6 +138,12 @@ public class ShadowLayout extends FrameLayout {
         }
     }
 
+    public void setmBackGroundColor(int mBackGroundColor) {
+        this.mBackGroundColor = mBackGroundColor;
+        paint.setColor(mBackGroundColor);
+        postInvalidate();
+    }
+
 
     public void setLeftShow(boolean leftShow) {
         this.leftShow = leftShow;
